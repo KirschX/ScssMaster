@@ -1,0 +1,51 @@
+@import "reset.scss";
+
+body {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    padding-top: 20px;
+    font-size: 16px;
+//    align-items: start;
+   h1 {
+       font-weight: 1000;
+       &:hover{
+           color: blue;
+       }
+   }
+}
+
+
+
+main {
+    display: grid;
+    column-gap: 20px;
+    row-gap:50px;
+    grid-template-columns: 1fr 1fr;
+    nav {
+        grid-column-start: span 2;
+        background-color: yellow;
+        margin-bottom: 20px;
+        font-size: 16px;
+        
+        ul {
+            display: flex;
+            li:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+    }
+    .photo {
+        &:hover {
+            h4 {
+                color: blue;
+            }
+        }
+        img {
+            max-width: 100%;
+            margin-bottom:10px;
+        }
+        h4 {
+            font-size: 14px;
+        }
+    }
+}
